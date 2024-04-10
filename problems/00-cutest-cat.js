@@ -10,12 +10,11 @@ function cutestCat(cats) {
 
   while (i < cats.length) {
     const cat = cats[i];
-    if (cat > cutest) {
+    if (!cutest || cat.cuteness > cutest.cuteness) {
       cutest = cat.cuteness;
     }
     i++;
-  }testinggg blahhhhhh
-  wyl test
+  }
 
   return cutest;
 }
